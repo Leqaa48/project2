@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import Nav from './component/nav';
+import Post from './component/post';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Footer from './component/footer';
+import Background from './background'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Router >
+        <div class="bar">
+          
+          <Link class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ><Post value="post" /> </Link>
+          <Link class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><Post value=" post" /></Link>
+          <Link class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ><Post value="post" /> </Link>
+       
+          <Link class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ><Post value="post" /> </Link>
+          <Link class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><Post value=" post" /></Link>
+          <Link class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ><Post value="post" /> </Link>
+        
+          <Link class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ><Post value="post" /> </Link>
+          <Link class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><Post value=" post" /></Link>
+          <Link class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ><Post value="post" /> </Link>
+        </div>
+        <Footer  />
+      </Router>
     </div>
   );
 }

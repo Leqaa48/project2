@@ -1,38 +1,126 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.searchh{ 
+   width:100px;
+   border-radius: 20px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.searchh:hover{
+  width: 500px;
+  transition-duration: .1s;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+}
+.footerBackground{
+  background-color: #88b4e7;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes inOut{
+  
+  25% {transform:scale(.9);}
+  50% {transform:scale(1);}
+  75% {transform:scale(1.2);}
+  100% {transform:scale(1);}
+}
+.Post:hover {
+  animation-name: inOut;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  
+  }
+  .Post{
+    margin: 10px;
+  }
+  .background{
+   margin: -10;
+  }
+
+
+.bubbles{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bubbles li{
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(233, 51, 66, 0.404);
+  animation: animate 25s linear infinite;
+}
+.bubbles li:nth-child(1) {
+left: 25%;
+width: 80px;
+height: 80px;
+animation-delay: 0;
+}
+.bubbles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  }
+.bubbles li:nth-child(3) {
+left: 70%;
+width: 20px;
+height: 20px;
+animation-delay: 4;
+}
+.bubbles li:nth-child(4) {
+left: 40%;
+width: 60px;
+height: 60px;
+animation-delay: 18s;
+}
+.bubbles li:nth-child(5) {
+left: 65%;
+width: 20px;
+height: 20px;
+animation-delay: 0;
+}
+.bubbles li:nth-child(6) {
+left: 10%;
+width: 20px;
+height: 20px;
+animation-delay: 0;
+}
+.bubbles li:nth-child(7) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0;
+}
+.bubbles li:nth-child(8) {
+left: 10%;
+width: 20px;
+height: 20px;
+animation-delay: 0;
+}
+.bubbles li:nth-child(9) {
+left: 10%;
+width: 20px;
+height: 20px;
+animation-delay: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+ 
