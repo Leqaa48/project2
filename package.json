@@ -16,7 +16,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "predeply":"npm run bulid",
+    "predeploy":"npm run bulid",
     "deploy":"gh-pages -d bulid",
     "start": "react-scripts start",
     "build": "react-scripts build",
